@@ -20,7 +20,8 @@ const CreateUser = (props) => {
         const password = e.target.elements[2].value
         await axios.post('/users/create',{name , email , password},{
             headers:{
-                authorization:token
+                authorization:token,
+                
             }
         })
         history.push('/users')

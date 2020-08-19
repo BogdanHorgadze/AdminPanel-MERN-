@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
-import { useHistory } from "react-router-dom";
+import { useHistory,NavLink } from "react-router-dom";
 
 
 const AuthPage = () => {
@@ -43,6 +43,7 @@ const AuthPage = () => {
                     <label htmlFor="password">password</label>
                     <span className="helper-text" data-error="input password"></span>
                 </div>
+                <div style={{marginBottom:'10px'}}><NavLink to="/reset">reset password</NavLink></div>
                 <button className="btn waves-effect waves-light" onClick={loginHandler} type="submit">login
                     <i className="material-icons right">login</i>
                 </button>

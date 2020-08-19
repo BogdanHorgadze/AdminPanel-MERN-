@@ -71,6 +71,8 @@ const Users = () => {
                 {dataRender()}
                 </table>
             <NavLink to="/users/create">create new user</NavLink>
+            <div><NavLink to="/profile">profile</NavLink></div>
+            <div><NavLink to="/auth">Auth</NavLink></div>
     </div>
         </div>
     )
