@@ -14,6 +14,9 @@ const userSchema = new Schema({
         type:String,
         required: true
     },
+    img:{
+        type:String
+    },
     profileId:{
         type:Schema.Types.ObjectId,
         ref:'Profiles',

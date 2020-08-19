@@ -8,6 +8,15 @@ const profilesSchema = Schema({
     password:{
         type:String,
         required:true
+    },
+    name:{
+        type:String
+    },
+    resetToken:{
+        type:String
+    },
+    avatarUrl:{
+        type:String
     }
 })
 

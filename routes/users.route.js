@@ -6,7 +6,6 @@ const auth = require('../middleware/auth')
 router.get('/', auth, async (req,res)=>{
     try{
     const user = await User.find({profileId : req.user.userId})
-    console.log(user)
     if(user){
         res.json(user)
     }
